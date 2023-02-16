@@ -15,4 +15,11 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  runtimeConfig: {
+    public: {
+      atlasURI: 'https://api.boardgameatlas.com/api/search',
+    },
+    atlasClientId: 'Client Id',
+    atlasClientSecret: 'Client Secret',
+  },
 })

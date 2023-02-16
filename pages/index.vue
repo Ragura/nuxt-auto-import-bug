@@ -1,14 +1,7 @@
+<script setup lang="ts">
+const games = await $fetch('/api/games')
+</script>
+
 <template>
-  <div>
-    <Logos mb-6 />
-    <Suspense>
-      <PageView />
-      <template #fallback>
-        <div op50 italic>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
-    <InputEntry />
-  </div>
+  {{ games }}
 </template>
